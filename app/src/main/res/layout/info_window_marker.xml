@@ -1,47 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/rounded_border"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:background="@drawable/rounded_border"
-    android:padding="5dp" >
-
-    <ImageView
-        android:id="@+id/info_window_imagen"
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:scaleType="fitCenter"
-        android:src="@drawable/logo_icon" />
-
-    <TextView
-        android:id="@+id/info_window_title"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    >
+    <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/colorTextPrimary"
-        android:layout_alignParentTop="true"
-        android:layout_toRightOf="@id/info_window_imagen"
-        android:paddingLeft="5dp"
-        android:text="Carlo Estrada Solano" />
+        android:background="@drawable/rounded_border"
+        android:padding="5dp" >
 
-    <TextView
-        android:id="@+id/info_window_name"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textStyle="bold"
-        android:textSize="20sp"
-        android:textColor="@color/colorTextSecondary"
-        android:layout_below="@id/info_window_title"
-        android:layout_toRightOf="@id/info_window_imagen"
-        android:paddingLeft="5dp"
-        android:text="Placas: SX5487" />
+        <ImageView
+            android:id="@+id/info_window_imagen"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/logo_icon" />
 
-    <TextView
-        android:id="@+id/info_window_description"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/colorTextSecondary"
-        android:layout_below="@id/info_window_name"
-        android:layout_toRightOf="@id/info_window_imagen"
-        android:paddingLeft="5dp"
-        android:text="Estado: Activo" />
+        <TextView
+            android:id="@+id/info_window_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorTextPrimary"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/info_window_imagen"
+            android:paddingLeft="5dp"
+            android:text="@string/title_activity_maps_marker" />
 
-</RelativeLayout>
+        <TextView
+            android:id="@+id/info_window_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/colorTextSecondary"
+            android:layout_below="@id/info_window_title"
+            android:layout_toRightOf="@id/info_window_imagen"
+            android:paddingLeft="5dp"
+            android:paddingTop="3dp"
+            android:text="Placas: SX5487" />
+
+        <TextView
+            android:id="@+id/info_window_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorTextSecondary"
+            android:layout_below="@id/info_window_name"
+            android:layout_toRightOf="@id/info_window_imagen"
+            android:paddingLeft="5dp"
+            android:paddingTop="2dp"
+            android:text="Estado: Activo" />
+
+    </RelativeLayout>
+</LinearLayout>

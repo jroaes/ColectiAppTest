@@ -1,7 +1,6 @@
 package com.jroaes.colectiapptest.network;
 
 import com.jroaes.colectiapptest.Constants;
-
 import com.jroaes.colectiapptest.dto.DataResponse;
 
 import java.util.ArrayList;

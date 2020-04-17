@@ -8,7 +8,7 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 /**
- * Created by Nostrum 2 on 13-02-2018.
+ * Created by JORGE ROA on 17.04.2020..
  */
 
 public class ApiClient {

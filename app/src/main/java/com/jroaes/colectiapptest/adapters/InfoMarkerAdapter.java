@@ -22,17 +22,12 @@ public class InfoMarkerAdapter implements GoogleMap.InfoWindowAdapter {
     private final String TAG = getClass().getName();
     private LayoutInflater inflater;
 
-    public InfoMarkerAdapter(LayoutInflater inflater){
+    public InfoMarkerAdapter(LayoutInflater inflater) {
         this.inflater = inflater;
     }
 
     @Override
     public View getInfoWindow(Marker marker) {
-        return null;
-    }
-
-    @Override
-    public View getInfoContents(Marker marker) {
         View v = inflater.inflate(R.layout.info_window_marker, null);
         ButterKnife.bind(this, v);
 
@@ -44,5 +39,10 @@ public class InfoMarkerAdapter implements GoogleMap.InfoWindowAdapter {
         nameMarker.setText(name);
         descriptionMarker.setText(description);
         return v;
+    }
+
+    @Override
+    public View getInfoContents(Marker marker) {
+        return null;
     }
 }

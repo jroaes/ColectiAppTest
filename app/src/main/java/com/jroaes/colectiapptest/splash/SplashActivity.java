@@ -17,11 +17,13 @@ public class SplashActivity extends BaseActivity {
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_splash);
 
-        new Handler().postDelayed(new Runnable(){
-            public void run(){
+        new Handler().postDelayed(new Runnable() {
+            public void run() {
                 go(SplashActivity.this, MapsActivity.class);
                 finish();
-            };
+            }
+
+            ;
         }, Constants.SPLASH_DURATION);
     }
 }

@@ -2,20 +2,18 @@ package com.jroaes.colectiapptest.requests;
 
 import androidx.annotation.NonNull;
 
-import com.google.gson.JsonElement;
-import com.google.gson.JsonIOException;
-import com.google.gson.JsonObject;
 import com.jroaes.colectiapptest.dto.DataResponse;
 import com.jroaes.colectiapptest.network.ApiUtils;
 
 import java.util.ArrayList;
-import java.util.Objects;
 
 import retrofit2.Call;
 import retrofit2.Callback;
 
+import static com.jroaes.colectiapptest.Constants.NO_INTERNET_ERROR;
+
 /**
- * Created by ARTEM PROKHOROV on 19.10.2018.
+ * Created by JORGE ROA on 17.04.2020.
  */
 public class DataMarkers {
 
@@ -45,19 +43,18 @@ public class DataMarkers {
                 try {
                     state = true;
                     error = "ok";
-                    DataMarkers.this.listener.onRequestFinished(state,error, response.body());
+                    DataMarkers.this.listener.onRequestFinished(state, error, response.body());
 
                 } catch (Exception e) {
                     e.printStackTrace();
                     state = false;
-                    error = "error";
                     DataMarkers.this.listener.onRequestFinished(state, error, null);
                 }
             }
 
             @Override
             public void onFailure(@NonNull Call<ArrayList<DataResponse>> call, @NonNull Throwable t) {
-                error = "error";
+                error = NO_INTERNET_ERROR;
                 state = false;
                 DataMarkers.this.listener.onRequestFinished(state, error, null);
             }
