@@ -1,4 +1,4 @@
-package com.jroaes.colectiapptest.Network;
+package com.jroaes.colectiapptest.network;
 
 import java.util.concurrent.TimeUnit;
 

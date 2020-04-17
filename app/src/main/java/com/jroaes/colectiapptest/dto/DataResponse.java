@@ -5,13 +5,13 @@ public class DataResponse {
     private String name;
     private Double lat;
     private Double lng;
-    private String descrition;
+    private String description;
 
     public DataResponse(String name, Double lat, Double lng, String descrition) {
         this.name = name;
         this.lat = lat;
         this.lng = lng;
-        this.descrition = descrition;
+        this.description = descrition;
     }
 
     public Double getLat() {
@@ -38,11 +38,11 @@ public class DataResponse {
         this.lng = lng;
     }
 
-    public String getDescrition() {
-        return descrition;
+    public String getDescription() {
+        return description;
     }
 
-    public void setDescrition(String descrition) {
-        this.descrition = descrition;
+    public void setDescription(String description) {
+        this.description = description;
     }
 }

@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#6200EE</color>
-    <color name="colorPrimaryDark">#3700B3</color>
-    <color name="colorAccent">#03DAC5</color>
+    <color name="colorPrimary">#F6C328</color>
+    <color name="colorPrimaryDark">#D6A202</color>
+    <color name="colorAccent">#F44336</color>
+
+    <!-- Text Color -->
+    <color name="colorTextPrimary">#4E4D4D</color>
+    <color name="colorTextSecondary">#989898</color>
+
+    <!-- Transparent Loading -->
+    <color name="colorGray">#BF4D4B4B</color>
+
+    <!-- Splash -->
+    <color name="splashBackground">#000</color>
+
 </resources>

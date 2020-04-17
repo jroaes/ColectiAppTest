@@ -1,4 +1,4 @@
-package com.jroaes.colectiapptest.Network;
+package com.jroaes.colectiapptest.network;
 
 import static com.jroaes.colectiapptest.Constants.BASE_URL;
 
@@ -16,7 +16,7 @@ public class ApiUtils {
      *
      * @return Retorna el cliente.
      */
-    public static RetrofitApi obtenerCliente() {
+    public static RetrofitApi getServices() {
         return ApiClient.getClient(BASE_URL).create(RetrofitApi.class);
     }
 }

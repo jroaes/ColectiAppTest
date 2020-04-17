@@ -1,17 +1,18 @@
-package com.jroaes.colectiapptest.Network;
+package com.jroaes.colectiapptest.network;
 
 import com.jroaes.colectiapptest.Constants;
 
 import com.jroaes.colectiapptest.dto.DataResponse;
 
+import java.util.ArrayList;
+
 import retrofit2.Call;
 import retrofit2.http.GET;
-import retrofit2.http.Url;
 
 
 public interface RetrofitApi {
 
     @GET(Constants.URL_DATA)
-    Call<DataResponse> getData(@Url String url);
+    Call<ArrayList<DataResponse>> getData();
 
 }
